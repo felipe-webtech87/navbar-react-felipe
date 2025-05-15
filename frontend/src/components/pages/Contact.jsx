@@ -5,6 +5,8 @@ import axios from 'axios';
 
 const Contact = () => {
   const {t} = useTranslation();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -19,13 +21,21 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
+
     try {
       const response = await axios.post('http://localhost:5000/api/contact', formData);
-      console.log('Form submitted:', formData)
-      alert('Form submitted')
+      console.log('Form submitted:', formData);
+
+      await new Promise(resolve => setTimeout(resolve, 2000));
+
+      setIsSubmitting(false);
     } catch (error) {
       console.log('Error sendind data:', error);
-      alert('Form not sent')
+
+      await new Promise(resolve => setTimeout(resolve, 2000));
+
+      setIsSubmitting(false);
     }
 
     setFormData({
@@ -84,7 +94,14 @@ const Contact = () => {
           />
         </div>
 
-        <button type="submit" className={styles.send} onClick={handleSubmit}>{t('send')}</button>
+        <button
+          type="submit" 
+          className={`${styles.send} ${isSubmitting ? styles.disabled : ''}`}
+          onClick={handleSubmit}
+          disabled={isSubmitting}
+        >
+          {isSubmitting ? t('sending') : t('send')}
+        </button>
       </form>
     </section>
     

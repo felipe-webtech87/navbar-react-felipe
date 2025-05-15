@@ -20,6 +20,7 @@
     "phone": "Phone",
     "message": "Message",
     "send": "Send",
+    "sending": "Sending...",
     "tech_h4": "Here are some of the technologies I have been working recently",
     "python": "For backend development and scripting",
     "js": "To make the web interactive",

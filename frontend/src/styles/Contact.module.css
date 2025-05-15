@@ -80,6 +80,12 @@
     background: linear-gradient(90deg, #7b5cf0, #9a7fff, #b8c0ff);
     border: none;
     border-radius: 50px;
+    cursor: pointer;
+}
+
+.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
 }
 
 @media (max-width: 767px) {
