@@ -1,6 +1,7 @@
-import React, {useState, usseState} from 'react'
+import { useState } from 'react'
 import styles from "../../styles/Contact.module.css"
 import { useTranslation } from 'react-i18next';
+import axios from 'axios';
 
 const Contact = () => {
   const {t} = useTranslation();
@@ -16,10 +17,16 @@ const Contact = () => {
     setFormData(prev => ({...prev, [name]: value}));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData)
-    alert('Form submitted')
+    try {
+      const response = await axios.post('http://localhost:5000/api/contact', formData);
+      console.log('Form submitted:', formData)
+      alert('Form submitted')
+    } catch (error) {
+      console.log('Error sendind data:', error);
+      alert('Form not sent')
+    }
 
     setFormData({
       name: '',
@@ -27,7 +34,7 @@ const Contact = () => {
       phone: '',
       message: '',
     })
-  }
+  };
 
   return (
     <section id='contact' className={styles.contact}>
