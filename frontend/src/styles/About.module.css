@@ -40,12 +40,18 @@
 
 @media (max-width: 767px) {
     .about_section {
-        padding: 100px 20px 32px 20px;
+        padding: 32px 20px 32px 20px;
     }
     
     .about {
-        display: grid;
         grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .picture {
+        order: 2;
+        padding: 10px;
+        margin-bottom: 40px;
     }
 
     .picture img{
@@ -54,6 +60,7 @@
     }
 
     .about_description {
+        order: 1;
         text-align: center;
     }
 }

@@ -23,6 +23,7 @@
     font-optical-sizing: auto;
     font-size: 20px;
     margin-top: 0;
+    text-align: center;
 }
 
 .form {
@@ -44,7 +45,7 @@
     margin-bottom: 5px;
 }
 
-.form_fields input, .form_fields textarea {
+.form_fields input, .form_fields textarea, .contact h4, .send {
     margin-bottom: 20px;
     width: 30vw;
 }
@@ -69,7 +70,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20vw;
     height: 40px;
     font-family: "Exo 2", sans-serif;
     font-optical-sizing: auto;
