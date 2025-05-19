@@ -5,7 +5,7 @@
 }
 
 .contact h1 {
-    font-family: "Exo 2", sans-serif;
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: italic;
     font-size: 50px;
@@ -19,7 +19,7 @@
 }
 
 .contact h4 {
-    font-family: "Exo 2", sans-serif;
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-size: 20px;
     margin-top: 0;
@@ -39,7 +39,7 @@
 }
 
 .label {
-    font-family: "Exo 2", sans-serif;
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-size: 18px;
     margin-bottom: 5px;
@@ -71,7 +71,7 @@
     align-items: center;
     justify-content: center;
     height: 40px;
-    font-family: "Exo 2", sans-serif;
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-size: 18px;
     font-weight: bold;

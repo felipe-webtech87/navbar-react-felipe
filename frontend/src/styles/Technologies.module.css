@@ -6,7 +6,7 @@
 }
 
 .title h1 {
-    font-family: "Exo 2", sans-serif;
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: italic;
     font-size: 50px;
@@ -20,7 +20,7 @@
 }
 
 .title h4 {
-    font-family: "Exo 2", sans-serif;
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: italic;
     font-size: 20px;
@@ -44,7 +44,7 @@
 }
 
 .name {
-    font-family: "Exo 2", sans-serif;
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .description {
-    font-family: "Exo 2", sans-serif;
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
 }
 
