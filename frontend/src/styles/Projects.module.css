@@ -44,6 +44,7 @@
     rgba(184, 192, 255, 0.1)
     );
     border: none;
+    border-radius: 10px;
 }
 
 .image {
